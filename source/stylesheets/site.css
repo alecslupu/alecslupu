@@ -1,0 +1,8 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+
+html {
+  @apply font-body antialiased;
+}
+
+@import "tailwindcss/utilities";
