@@ -1,0 +1,48 @@
+---
+pageable: true
+---
+<div class="container py-6 md:py-10">
+  <div class="mx-auto max-w-4xl">
+    <h2 class="text-center pt-5 font-body text-3xl font-semibold text-primary sm:text-4xl md:text-5xl xl:text-6xl">
+      Blog
+    </h2>
+    <h4 class="pt-6 text-center font-header text-xl font-medium text-black sm:text-2xl lg:text-3xl">
+      Archive for
+      <% case page_type
+         when 'day' %>
+        <%= Date.new(year, month, day).strftime('%b %e %Y') %>
+      <% when 'month' %>
+        <%= Date.new(year, month, 1).strftime('%b %Y') %>
+      <% when 'year' %>
+        <%= year %>
+      <% end %>
+    </h4>
+    <% if paginate && num_pages > 1 %>
+
+      <div class="mt-10 flex justify-between border-t border-lila py-12">
+        <% if prev_page %>
+           <a href="<%= prev_page.url %>" class="flex items-center">
+            <i class="bx bx-left-arrow-alt text-2xl text-primary"></i>
+            <span class="block pl-2 font-body text-lg font-bold uppercase text-primary md:pl-5">Previous page</span>
+          </a>
+        <% else %>
+          <a href="#" class="flex items-center"></a>
+        <% end %>
+
+        <% if next_page %>
+          <a href="<%= next_page.url %>" class="flex items-center">
+            <span class="block pr-2 font-body text-lg font-bold uppercase text-primary md:pr-5">Next page</span>
+            <i class="bx bx-right-arrow-alt text-2xl text-primary"></i>
+          </a>
+        <% end %>
+      </div>
+
+    <% end %>
+
+    <div class="mx-auto grid w-full grid-cols-1 gap-6 pt-12 sm:w-3/4 lg:w-full lg:grid-cols-2 xl:gap-10">
+      <% page_articles.each do |article| %>
+        <%= partial "partials/article_preview", locals: {article: article} %>
+      <% end %>
+    </div>
+  </div>
+</div>

@@ -18,7 +18,7 @@ sections:
     enabled: true
     name: Statistics
   - id: blog
-    enabled: false
+    enabled: true
     name: Blog
   - id: contact
     enabled: true

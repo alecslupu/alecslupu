@@ -3,6 +3,28 @@
 
 require "debug"
 
+# Blog
+activate :blog do |blog|
+  blog.paginate = true
+
+  blog.page_link = "p{num}"
+  blog.per_page = 2
+
+
+  blog.layout = "blog_layout"
+  blog.permalink = "blog/{year}-{month}-{day}-{title}.html"
+  blog.sources = "blog/en/{year}-{month}-{day}-{title}.html"
+  blog.default_extension = ".md"
+  blog.tag_template = "blog/tag.html"
+  blog.calendar_template = "blog/calendar.html"
+  blog.custom_collections = {
+    category: {
+      link: '/categories/{category}.html',
+      template: 'blog/category.html'
+    }
+  }
+end
+
 # Reload the browser automatically whenever files change
 configure :development do
   activate :livereload
