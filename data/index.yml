@@ -35,16 +35,16 @@ portfolio:
 stats:
   - name: Decidim Modules
     value: 10+
-    icon: bx-qr bx-flip-vertical
+    icon: ri-qr-code-line
   - name: Happy Clients
     value: 15+
-    icon: bx-user-check
+    icon: ri-user-heart-line
   - name: Distinct projects
     value: 25+
-    icon: bxl-github
+    icon: ri-github-line
   - name: Pull requests
     value: 1000+
-    icon: bx-git-pull-request
+    icon: ri-git-pull-request-line
 
 
 skills:

@@ -26,11 +26,11 @@ sections:
 
 social:
   - id: linkedin
-    icon: bxl-linkedin
+    icon: ri-linkedin-box-fill
     url: https://www.linkedin.com/in/alecslupu
   - id: twitter
-    icon: bxl-twitter
+    icon: ri-twitter-fill
     url: https://twitter.com/alecslupu
   - id: github
-    icon: bxl-github
+    icon: ri-github-fill
     url: https://github.com/alecslupu/

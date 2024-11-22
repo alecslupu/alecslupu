@@ -3,7 +3,7 @@
     <div class="flex items-center justify-center pt-5 sm:justify-start sm:pt-0 ml-auto">
       <% data.structure.social.each_with_index do |feat, i| %>
         <a href="<%= feat.url %>" class="pl-4">
-          <i class="bx <%= feat.icon %> text-2xl text-white hover:text-yellow"></i>
+          <%= icon(feat.icon, class: "w-6 h-6 text-white hover:text-yellow") %>
         </a>
       <% end %>
     </div>

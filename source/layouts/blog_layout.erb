@@ -36,7 +36,7 @@
       <div class="mt-10 flex justify-between border-t border-lila py-12">
         <% if current_article.article_previous %>
           <a href="<%=  current_article.article_previous.url %>" class="flex items-center">
-            <i class="bx bx-left-arrow-alt text-2xl text-primary"></i>
+            <%= icon("ri-arrow-left-s-line", class: "w-6 h-6 text-primary") %>
             <span class="block pl-2 font-body text-lg font-bold uppercase text-primary md:pl-5">Previous Post</span>
           </a>
         <% else %>
@@ -46,7 +46,7 @@
         <% if current_article.article_next %>
           <a href="<%= current_article.article_next.url %>" class="flex items-center">
             <span class="block pr-2 font-body text-lg font-bold uppercase text-primary md:pr-5">Next Post</span>
-            <i class="bx bx-right-arrow-alt text-2xl text-primary"></i>
+            <%= icon("ri-arrow-right-s-line", class: "w-6 h-6 text-primary") %>
           </a>
         <% end %>
       </div>
@@ -64,8 +64,8 @@
           </p>
           <div class="flex items-center justify-center pt-5 md:justify-start">
             <% data.structure.social.each_with_index do |feat, i| %>
-              <a href="<%= feat.url %>" class="pr-4">
-                <i class="bx <%= feat.icon %> text-2xl text-primary hover:text-yellow"></i>
+              <a href="<%= feat.url %>" class="pl-4">
+                <%= icon(feat.icon, class: "w-6 h-6 text-primary hover:text-yellow") %>
               </a>
             <% end %>
           </div>

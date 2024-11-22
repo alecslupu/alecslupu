@@ -22,7 +22,7 @@ pageable: true
       <div class="mt-10 flex justify-between border-t border-lila py-12">
         <% if prev_page %>
            <a href="<%= prev_page.url %>" class="flex items-center">
-            <i class="bx bx-left-arrow-alt text-2xl text-primary"></i>
+             <%= icon("ri-arrow-left-s-line", class: "w-6 h-6 text-primary") %>
             <span class="block pl-2 font-body text-lg font-bold uppercase text-primary md:pl-5">Previous page</span>
           </a>
         <% else %>
@@ -32,7 +32,7 @@ pageable: true
         <% if next_page %>
           <a href="<%= next_page.url %>" class="flex items-center">
             <span class="block pr-2 font-body text-lg font-bold uppercase text-primary md:pr-5">Next page</span>
-            <i class="bx bx-right-arrow-alt text-2xl text-primary"></i>
+            <%= icon("ri-arrow-right-s-line", class: "w-6 h-6 text-primary") %>
           </a>
         <% end %>
       </div>

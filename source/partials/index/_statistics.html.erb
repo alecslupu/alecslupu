@@ -5,7 +5,7 @@
         <% data.index.stats.each_with_index do |stat, index| %>
           <div class="flex flex-col items-center justify-center text-center md:flex-row md:text-left">
             <div>
-              <i class="bx text-6xl text-primary <%= stat.icon %>"></i>
+              <%= icon(stat.icon, class: "w-16 h-16 text-primary") %>
             </div>
             <div class="pt-5 md:pl-5 md:pt-0">
               <h1 class="font-body text-2xl font-bold text-primary md:text-4xl">

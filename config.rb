@@ -2,6 +2,8 @@
 # https://middlemanapp.com/advanced/configuration/#configuring-extensions
 
 require "debug"
+require "lib/icon_helpers"
+helpers IconHelpers
 
 # Blog
 activate :blog do |blog|

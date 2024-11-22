@@ -23,7 +23,9 @@
           <div class="relative flex md:pl-18">
             <span class="absolute left-8 top-1 hidden h-4 w-4 rounded-full border-2 border-grey-40 bg-white md:block"></span>
             <div class="mt-1 flex">
-              <i class="bx bxs-right-arrow hidden text-primary md:block"></i>
+              <span>
+                <%= icon("ri-arrow-right-s-fill", class: "w-6 h-6 hidden text-primary md:block") %>
+              </span>
               <div class="md:-mt-1 md:pl-8">
                 <span class="block font-body font-bold text-grey-40"><%= experience.start_date %> - <%= experience.end_date %></span>
                 <span class="block pt-2 font-header text-xl font-bold uppercase text-primary"><%= experience.role %></span>
