@@ -17,6 +17,15 @@ activate :external_pipeline,
          source: "source/stylesheets",
          latency: 1
 
+activate :blog do |blog|
+  blog.paginate = false
+  blog.layout = "blog_layout"
+  blog.permalink = "blog/{year}-{month}-{day}-{title}.html"
+  blog.sources = "blog/en/{year}-{month}-{day}-{title}.html"
+  blog.default_extension = ".md"
+  blog.tag_template = "blog/tag.html"
+  blog.calendar_template = "blog/calendar.html"
+end
 
 activate :autoprefixer do |prefix|
   prefix.browsers = "last 2 versions"
