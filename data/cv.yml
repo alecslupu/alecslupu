@@ -1,0 +1,45 @@
+experience:
+  - company_name: Decidim Association
+    company_logo: /images/work-experience/decidim-logo-claim.svg
+    start_date: "Feb 2023"
+    end_date: ""
+    role: "Maintainer"
+    description: |
+      As a Decidim developer, I've gained insight into the platform's architecture and development roadmap. I'm committed to improving features and capabilities for civic engagement  and participation. With my expertise, I'll ensure high standards and contribute to shaping the future of civic technology within the Decidim community.
+  - company_name: European Commission
+    company_logo: /images/work-experience/eu.png
+    start_date: "Sep 2020"
+    end_date: ""
+    role: Developer
+    description: |
+      As an experienced Decidim developer, I have been working with this open-source platform for the past three years, gaining valuable expertise in its functionalities and capabilities. During this time, I have worked on numerous Decidim projects, building and deploying custom modules and integrations to meet the specific needs of my clients.
+  - company_name: Open Source Politics
+    company_logo: /images/work-experience/osp.png
+    start_date: "Aug 2023"
+    end_date: ""
+    role: "Developer"
+    description: | 
+      I am currently helping the Open Source Politics team deliver various functionalities to their clients by developing Decidim modules
+  - company_name: eJobs Romania
+    company_logo: /images/work-experience/ejobs.png
+    start_date: "Nov 2015"
+    end_date: "Dec 2017"
+    role: "CTO"
+    description: |
+      Implemented efficient bug reporting procedures, ticketing system for customer feedback, and reply automation. Supervised optimization tasks, improving cron job runtime from hours to minutes. Guided virtualization process, implemented monitoring tools, and switched to micro-service architecture for scalability. Mentored team members in programming skills and researched Machine Learning using Python.
+  - company_name: 2Performant
+    company_logo: /images/work-experience/2performant.png
+    start_date: "Dec 2012"
+    end_date: "Dec 2015"
+    role: "Developer, CTO"
+    description: |
+      I implemented a code review & release policy, set up a build and continuous integration system, and migrated hosting with zero downtime. I also improved Affiliate Commission processing times, optimized database and code performance, developed features for multiple websites, and created an Affiliate payment system to support business operations efficiently.
+  - company_name: eRepublik Labs
+    company_logo: /images/work-experience/erepublik.png
+    start_date: "May 2010"
+    end_date: "Dec 2012"
+    role: "Developer"
+    description: |
+      As Tech Lead, I coordinated a team to implement an internal project. As technical owner, I led projects like the admin area and Erepublik API (Ruby version). I also performed various development tasks across frontend and backend areas (HTML/CSS/JS, Symfony/Propel/Doctrine) for multiple company-owned applications.
+
+

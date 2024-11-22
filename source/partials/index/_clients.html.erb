@@ -6,9 +6,10 @@
       </h2>
       <div class="flex flex-wrap items-center justify-center pt-4 sm:pt-4">
         <% data.index.clients.each do |client| %>
-          <span class="m-8 block">
-            <img src="/assets/img/logo-coca-cola.svg" alt="<%= client.name %>" class="mx-auto block h-12 w-auto" />
-          </span>
+          <% next unless client.enabled %>
+          <a href="#" title="<%= client.name %>" class="m-8 block">
+            <img src="<%= client.logo %>" alt="<%= client.name %>" class="mx-auto block h-12 w-auto" />
+          </a>
         <% end %>
       </div>
     </div>

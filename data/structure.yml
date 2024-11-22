@@ -6,22 +6,22 @@ sections:
     enabled: false
     name: Services
   - id: portfolio
-    enabled: false
+    enabled: true
     name: Portfolio
   - id: clients
-    enabled: false
+    enabled: true
     name: Clients
   - id: work
-    enabled: false
+    enabled: true
     name: Work
   - id: statistics
-    enabled: false
+    enabled: true
     name: Statistics
   - id: blog
     enabled: false
     name: Blog
   - id: contact
-    enabled: false
+    enabled: true
     name: Contact
 
 social:

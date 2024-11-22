@@ -1,16 +1,51 @@
 clients:
-  - logo:
+  - logo: /images/work-experience/osp.png
+    enabled: true
     name: Open Source Politics
-  - logo:
+  - logo: /images/work-experience/eu.png
+    enabled: true
     name: European Commission
-  - logo:
+  - logo: /images/work-experience/decidim-logo-claim.svg
+    enabled: true
     name: Decidim Association
-  - logo:
+  - logo: /images/clients/pokecode.png
+    enabled: true
     name: PokeCode
-  - logo:
+  - logo: /images/clients/tremend.png
+    enabled: true
     name: Tremend
-  - logo:
+  - logo: /images/clients/smartemp.png
+    enabled: false
     name: SmartTemp
+
+portfolio:
+  - url: https://citizens.ec.europa.eu
+    image: /images/portfolio/citizens.png
+    name: Citizens platform
+  - url: https://futureu.europa.eu
+    image: /images/portfolio/futureu.png
+    name: Future of Europe
+  - url: https://github.com/alecslupu-pfa/decidim-module-slider
+    image: /images/portfolio/nyc.png
+    name: Decidim Slider Module
+  - url: https://github.com/OpenSourcePolitics/decidim-module-gallery
+    image: /images/portfolio/gallery.png
+    name: Decidim Gallery Module
+
+stats:
+  - name: Decidim Modules
+    value: 10+
+    icon: bx-qr bx-flip-vertical
+  - name: Happy Clients
+    value: 15+
+    icon: bx-user-check
+  - name: Distinct projects
+    value: 25+
+    icon: bxl-github
+  - name: Pull requests
+    value: 1000+
+    icon: bx-git-pull-request
+
 
 skills:
   - name: Ruby
