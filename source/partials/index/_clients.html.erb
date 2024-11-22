@@ -1,0 +1,16 @@
+<div class="bg-grey-50" id="clients">
+  <div class="container py-16 md:py-20">
+    <div class="mx-auto w-full sm:w-3/4 lg:w-full">
+      <h2 class="text-center font-header text-4xl font-semibold uppercase text-primary sm:text-5xl lg:text-6xl">
+        My latest clients
+      </h2>
+      <div class="flex flex-wrap items-center justify-center pt-4 sm:pt-4">
+        <% data.index.clients.each do |client| %>
+          <span class="m-8 block">
+            <img src="/assets/img/logo-coca-cola.svg" alt="<%= client.name %>" class="mx-auto block h-12 w-auto" />
+          </span>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>

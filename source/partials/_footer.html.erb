@@ -1,0 +1,14 @@
+<div class="bg-primary">
+  <div class="container flex flex-col justify-between py-6 sm:flex-row">
+    <p class="text-center font-body text-white md:text-left">
+      © Copyright 2022. All right reserved, ATOM.
+    </p>
+    <div class="flex items-center justify-center pt-5 sm:justify-start sm:pt-0">
+      <% data.structure.social.each_with_index do |feat, i| %>
+        <a href="<%= feat.url %>" class="pl-4">
+          <i class="bx <%= feat.icon %> text-2xl text-white hover:text-yellow"></i>
+        </a>
+      <% end %>
+    </div>
+  </div>
+</div>

@@ -5,7 +5,7 @@ module.exports = {
   safelist: [{ pattern: /.*/ }], // uncomment to disable purging
   theme: {
     fontFamily: {
-      header: ["Raleway", "sans-serif"],
+      header: ["Open Sans", "sans-serif"],
       body: ["Open Sans", "sans-serif"],
     },
 
@@ -16,7 +16,7 @@ module.exports = {
 
     colors: {
       transparent: "transparent",
-      primary: "#5540af",
+      primary: "#2684e5",
       secondary: "#252426",
       white: "#ffffff",
       black: "#000000",
@@ -29,8 +29,8 @@ module.exports = {
       "grey-50": "#f4f3f8",
       "grey-60": "#edebf6",
       "grey-70": "#d8d8d8",
-      "hero-gradient-from": "rgba(85, 64, 174, 0.95)",
-      "hero-gradient-to": "rgba(65, 47, 144, 0.93)",
+      "hero-gradient-from": "rgba(16,83,152,0.85)",
+      "hero-gradient-to": "rgba(11,75,140,0.85)",
       "blog-gradient-from": "#8f9098",
       "blog-gradient-to": "#222222",
     },

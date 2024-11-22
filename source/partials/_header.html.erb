@@ -1,0 +1,25 @@
+<div class="w-full z-50 top-0 py-3 sm:py-5 fixed bg-gradient-to-r from-hero-gradient-from to-hero-gradient-to">
+  <div class="container flex items-center justify-between">
+    <div>
+      <a href="/">
+        <img src="/images/white-logo.svg" class="w-24 lg:w-[24rem]" alt="logo image" />
+      </a>
+    </div>
+    <div class="hidden lg:block">
+      <ul class="flex items-center">
+        <% data.structure.sections.each do |section| %>
+          <% next unless section.enabled %>
+          <li class="group pl-6">
+            <span @click="triggerNavItem('#<%= section.id %>')" class="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white"><%= section.name %></span>
+            <span class="block h-0.5 w-full bg-transparent group-hover:bg-yellow"></span>
+          </li>
+        <% end %>
+      </ul>
+    </div>
+    <div class="block lg:hidden">
+      <button @click="mobileMenu = true">
+        <i class="bx bx-menu text-4xl text-white"></i>
+      </button>
+    </div>
+  </div>
+</div>

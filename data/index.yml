@@ -1,0 +1,23 @@
+clients:
+  - logo:
+    name: Open Source Politics
+  - logo:
+    name: European Commission
+  - logo:
+    name: Decidim Association
+  - logo:
+    name: PokeCode
+  - logo:
+    name: Tremend
+  - logo:
+    name: SmartTemp
+
+skills:
+  - name: Ruby
+    percentage: 80
+  - name: Html
+    percentage: 80
+  - name: php
+    percentage: 60
+  - name: python
+    percentage: 50

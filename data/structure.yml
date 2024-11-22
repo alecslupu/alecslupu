@@ -1,0 +1,36 @@
+sections:
+  - id: about
+    enabled: true
+    name: About
+  - id: services
+    enabled: false
+    name: Services
+  - id: portfolio
+    enabled: false
+    name: Portfolio
+  - id: clients
+    enabled: false
+    name: Clients
+  - id: work
+    enabled: false
+    name: Work
+  - id: statistics
+    enabled: false
+    name: Statistics
+  - id: blog
+    enabled: false
+    name: Blog
+  - id: contact
+    enabled: false
+    name: Contact
+
+social:
+  - id: linkedin
+    icon: bxl-linkedin
+    url: https://www.linkedin.com/in/alecslupu
+  - id: twitter
+    icon: bxl-twitter
+    url: https://twitter.com/alecslupu
+  - id: github
+    icon: bxl-github
+    url: https://github.com/alecslupu/

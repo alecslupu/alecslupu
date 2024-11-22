@@ -1,0 +1,24 @@
+<div
+  class="pointer-events-none fixed inset-0 z-70 min-h-screen bg-black bg-opacity-70 opacity-0 transition-opacity lg:hidden"
+  :class="{ 'opacity-100 pointer-events-auto': mobileMenu }"
+>
+  <div
+    class="absolute right-0 min-h-screen w-2/3 bg-primary py-4 px-8 shadow md:w-1/3"
+  >
+    <button
+      class="absolute top-0 right-0 mt-4 mr-4"
+      @click="mobileMenu = false"
+    >
+      <img src="/images/icon-close.svg" class="h-10 w-auto" alt="" />
+    </button>
+    <ul class="mt-8 flex flex-col">
+      <% data.structure.sections.each do |section| %>
+        <% next unless section.enabled %>
+        <li class="py-2">
+          <span @click="triggerNavItem('#<%= section.id %>')" class="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white"><%= section.name %></span>
+          <span class="block h-0.5 w-full bg-transparent group-hover:bg-yellow"></span>
+        </li>
+      <% end %>
+    </ul>
+  </div>
+</div>

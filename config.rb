@@ -1,11 +1,8 @@
 # Activate and configure extensions
 # https://middlemanapp.com/advanced/configuration/#configuring-extensions
 
-# activate :external_pipeline,
-#          name: :tailwind,
-#          command: build? ? 'npm run build' : 'npm run css --watch',
-#          source: "source/stylesheets",
-#          latency: 1
+require "debug"
+
 # Reload the browser automatically whenever files change
 configure :development do
   activate :livereload
@@ -16,16 +13,6 @@ activate :external_pipeline,
          command: "./node_modules/tailwindcss/lib/cli.js --postcss -i ./source/stylesheets/site.css -o ./source/stylesheets/tailwind.css #{build? ? "--minify" : "--watch"}",
          source: "source/stylesheets",
          latency: 1
-
-activate :blog do |blog|
-  blog.paginate = false
-  blog.layout = "blog_layout"
-  blog.permalink = "blog/{year}-{month}-{day}-{title}.html"
-  blog.sources = "blog/en/{year}-{month}-{day}-{title}.html"
-  blog.default_extension = ".md"
-  blog.tag_template = "blog/tag.html"
-  blog.calendar_template = "blog/calendar.html"
-end
 
 activate :autoprefixer do |prefix|
   prefix.browsers = "last 2 versions"
