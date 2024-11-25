@@ -25,19 +25,17 @@ jobs:
         with:
           ruby-version: ${{ env.RUBY_VERSION }}
           bundler-cache: true
-      - uses: actions/setup-node@v1
+      - uses: actions/setup-node@v4
         with:
           node-version: ${{ env.NODE_VERSION }}
-      - name: Get npm cache directory path
-        id: npm-cache-dir-path
-        run: echo "::set-output name=dir::$(npm get cache)-main"
+          cache: 'npm'
+          cache-dependency-path: ./package-lock.json
       - uses: actions/cache@v4
-        id: npm-cache
+        id: app-cache
         with:
-          path: ${{ steps.npm-cache-dir-path.outputs.dir }}
-          key: npm-${{ hashFiles('**/package-lock.json') }}
-          restore-keys: |
-            npm-
+          path: ./spec/decidim_dummy_app/
+          key: app-${{ github.sha }}
+          restore-keys: app-${{ github.sha }}
       - run: npm install
         name: Build JS
         shell: "bash"
