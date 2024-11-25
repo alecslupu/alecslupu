@@ -3,6 +3,7 @@
 title: Cleanup Big mongodb Collection
 date: 2014-12-28 00:00 UTC
 tags: 
+category: "MongoDB" 
 
 ---
 

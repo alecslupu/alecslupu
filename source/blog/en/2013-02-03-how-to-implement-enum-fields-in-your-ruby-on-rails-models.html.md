@@ -3,6 +3,7 @@
 title: How to implement Enum Fields in your Ruby on Rails models
 date: 2013-02-03 00:00 UTC
 tags: 
+category: "Ruby on Rails" 
 
 ---
 

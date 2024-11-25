@@ -3,6 +3,7 @@
 title: Instrumenting Trailblazer Cells::Rails
 date: 2020-09-12 00:00 UTC
 tags: 
+category: "Ruby on Rails" 
 
 ---
 

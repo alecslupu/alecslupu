@@ -19,7 +19,7 @@
           <% data.structure.sections.each do |section| %>
             <% next unless section.enabled %>
             <li class="group pl-6">
-              <a href="/#<%= section.id %>" class="cursor-pointe pt-0.5 font-header font-semibold uppercase text-white"><%= section.name %></a>
+              <a href="<%= section.anchor %>" class="cursor-pointe pt-0.5 font-header font-semibold uppercase text-white"><%= section.name %></a>
               <span class="block h-0.5 w-full bg-transparent group-hover:bg-yellow"></span>
             </li>
           <% end %>

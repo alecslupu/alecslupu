@@ -4,6 +4,7 @@ title: Database optimization technique and how storage engine works
 date: 2013-07-25 00:00 UTC
 image: /uploads/pagination.png
 tags: 
+category: "MySQL" 
 
 ---
 

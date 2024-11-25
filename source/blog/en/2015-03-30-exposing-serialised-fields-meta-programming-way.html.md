@@ -3,6 +3,7 @@
 title: Exposing serialised fields – meta programming way
 date: 2015-03-30 00:00 UTC
 tags: 
+category: "Ruby on Rails" 
 
 ---
 

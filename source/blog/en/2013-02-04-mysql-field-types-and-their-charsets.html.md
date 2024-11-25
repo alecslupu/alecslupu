@@ -3,6 +3,7 @@
 title: Mysql field types and their charsets
 date: 2013-02-04 00:00 UTC
 tags: 
+category: MySQL
 
 ---
 

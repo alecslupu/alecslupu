@@ -3,6 +3,7 @@
 title: Romanian Phone Number validator
 date: 2014-07-29 00:00 UTC
 tags: 
+category: "Javascript" 
 
 ---
 

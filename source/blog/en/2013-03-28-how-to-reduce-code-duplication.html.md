@@ -3,6 +3,7 @@
 title: How to reduce code duplication
 date: 2013-03-28 00:00 UTC
 tags: 
+category: "Ruby on Rails" 
 
 ---
 

@@ -4,6 +4,8 @@ title: Horizontal scaling using Db Charmer
 date: 2014-01-29 00:00 UTC
 tags: 
 image: /uploads/dbcharmer.png
+category: "Ruby on Rails" 
+
 ---
 
 ![Horizontal scaling using Db Charmer](/uploads/dbcharmer.png)

@@ -4,6 +4,7 @@ title: How to use aggressive file caching
 date: 2013-12-27 00:00 UTC
 tags: 
 image: /uploads/aggressive.png
+category: "PHP" 
 
 ---
 

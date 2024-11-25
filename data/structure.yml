@@ -1,26 +1,34 @@
 sections:
   - id: about
+    anchor: "/#about"
     enabled: true
     name: About
   - id: services
+    anchor: "/#services"
     enabled: false
     name: Services
   - id: portfolio
+    anchor: "/#portfolio"
     enabled: true
     name: Portfolio
   - id: clients
+    anchor: "/#clients"
     enabled: true
     name: Clients
   - id: work
+    anchor: "/#work"
     enabled: true
     name: Work
   - id: statistics
+    anchor: "/#statistics"
     enabled: true
     name: Statistics
   - id: blog
+    anchor: /blog
     enabled: true
     name: Blog
   - id: contact
+    anchor: "/#contact"
     enabled: true
     name: Contact
 

@@ -3,6 +3,7 @@
 title: Rails: Use JSON to serialize model attributes
 date: 2015-04-01 00:00 UTC
 tags: 
+category: "Ruby on Rails" 
 
 ---
 

@@ -3,6 +3,7 @@
 title: Sphinx mysql command line
 date: 2014-05-14 00:00 UTC
 tags: 
+category: "Sphinx" 
 
 ---
 
