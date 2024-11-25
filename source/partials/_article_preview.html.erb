@@ -9,9 +9,9 @@
     <span class="block font-body text-lg font-semibold text-black"><%= article.title %></span>
     <span class="block pt-2 font-body text-grey-20">
       <% if strip %>
-        <%= strip_img article.summary %>
+        <%= strip_img article.summary(170) %>
       <% else %>
-        <%= article.summary %>
+        <%= article.summary(170) %>
       <% end %>
     </span>
   </div>

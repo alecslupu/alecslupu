@@ -8,7 +8,7 @@
         Check out my latest posts!
       </h4>
       <div class="mx-auto grid w-full grid-cols-1 gap-6 pt-12 sm:w-3/4 lg:w-full lg:grid-cols-3 xl:gap-10">
-        <% blog.articles[0...2].each do |article| %>
+        <% blog.articles[0...3].each do |article| %>
           <%= partial "partials/article_preview", locals: { article: article } %>
         <% end %>
       </div>

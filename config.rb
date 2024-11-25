@@ -3,6 +3,9 @@
 
 require "debug"
 require "lib/icon_helpers"
+require "lib/data_helpers"
+
+helpers DataHelpers
 helpers IconHelpers
 
 # Blog
